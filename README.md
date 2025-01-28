@@ -1,5 +1,8 @@
+## Dependency Details
 
-## What is 'dotenv' package?
+### What is 'dotenv' package?    
+
+
 
 `dotenv` is a popular npm package that loads environment variables from a `.env` file into Node.js applications. Here's what it does:
 
@@ -61,10 +64,24 @@ node_modules/
 Example `.env.example`:
 
 ```
-env
-Copy
 PORT=3000
 DATABASE_URL=mongodb://localhost/dbname
 API_KEY=your_api_key_here
 
 ```
+### What is 'express' package?
+
+   - Express, on the other hand, is a web framework built on top of Node.js. 
+   - It simplifies the process of building server-side applications by providing utilities and features that make it easier to organize application functionality, 
+   - handle ==middleware==, 
+   - and manage ==routing==. 
+   - Express is widely used for developing web applications and APIs, and it facilitates the rendering of dynamic - ==HTTP responses==.
+### What is 'nodemon' package?
+- nodemon is a tool that helps develop Node.js based applications by automatically restarting the node application when file changes in the directory are detected. 
+
+## Concepts
+### What is NodeJS
+- NodeJS Runtime Environment
+- Node.js is a runtime environment for executing JavaScript code outside of a browser, making it possible to use JavaScript for server-side programming. 
+- It is an open-source, cross-platform tool that supports various operating systems like macOS, Linux, and Windows.
+-  Node.js incorporates the V8 JavaScript engine, which compiles and executes JavaScript code.
