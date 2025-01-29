@@ -1,9 +1,9 @@
-const express = require('express');
+import express from 'express';
 const router = express.Router();
 
 // Simple test route
-router.get('/test', (req, res) => {
+router.get('/status', (req, res) => {
     res.json({ message: "User routes working!" });
 });
 
-module.exports = router;
+export default router;
