@@ -1,10 +1,9 @@
+
 import express from 'express';
+import { getAllTurfs } from '../controllers/turfController.js'; 
+
 const router = express.Router();
 
-import statusRoutes from './Status.js';    
-
-
-
-router.use('/users', statusRoutes);
+router.get('/getTurfs', getAllTurfs);
 
 export default router;
