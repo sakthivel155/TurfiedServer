@@ -10,9 +10,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // 2. CORS Middleware
 app.use(cors({
-    origin: process.env.NODE_ENV === 'production' 
-        ? 'your-production-domain.com'  // Replace with your production domain
-        : ['http://localhost:5173', 'http://localhost:3000'], // Add any other development origins
+    origin:'*', // Add any other development origins
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true

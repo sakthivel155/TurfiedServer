@@ -1,9 +1,13 @@
 
 import express from 'express';
-import { getAllTurfs } from '../controllers/turfController.js'; 
 
-const router = express.Router();
+import turfRouters from './turfRoutes.js';
+import userRouters from './userRoutes.js';
 
-router.get('/getTurfs', getAllTurfs);
+const routes = express.Router();
 
-export default router;
+routes.use('/turf', turfRouters);
+routes.use('/user', userRouters);
+
+
+export default routes ;
