@@ -1,5 +1,5 @@
 import db from '../config/database.js';
-import bcrypt from 'bcrypt';
+import bcrypt from 'bcryptjs';
 
 export const createUser = async (data) => {
     const { email, username, password } = data;
