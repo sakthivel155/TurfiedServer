@@ -31,7 +31,7 @@ app.use('/api', routes);
 
 // 5. Health check route
 app.get('/health', (req, res) => {
-    res.status(200).json({ status: 'OK' });
+    res.status(200).json({ status: 'hello vercel backend connect succesfully' });
 });
 
 export default app;
