@@ -5,6 +5,7 @@ const getAllTurfs = async (req, res) => {
     const turfs = await turfModel.getTurfs();
     res.json(turfs);
   } catch (err) {
+    console.error('Database error:', err); 
     res.status(500).json({ error: err.message });
   }
 };
